@@ -115,6 +115,10 @@
                 this.disable();
             }
 
+            if(this.select.prop('title')){
+                this.container.attr('title', this.select.prop('title'));
+            }
+
             if(this.options.sortable){
                 if (typeof $.ui != 'undefined'){
                     this.tokensContainer.sortable({
